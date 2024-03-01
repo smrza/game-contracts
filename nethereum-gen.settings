@@ -1,0 +1,7 @@
+{
+    "projectName": "GameContracts",
+    "namespace": "GameContracts.Contracts",
+    "lang": 0,
+    "autoCodeGen": true,
+    "projectPath": "./nethereum"
+}

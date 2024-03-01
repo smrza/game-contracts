@@ -1,0 +1,20 @@
+{
+    "extends": "solhint:all",
+    "rules": {
+        "func-visibility": ["error", { "ignoreConstructors": true }],
+        "compiler-version": ["error", "^0.8.0"],
+        "no-global-import": "error",
+        "no-inline-assembly": "off",
+        "not-rely-on-time": "warn",
+        "reason-string": "off",
+        "no-empty-blocks": "error",
+        "avoid-low-level-calls": "warn",
+        "no-unused-vars": "error",
+        "private-vars-leading-underscore": "error",
+        "imports-on-top": "error",
+        "max-line-length": ["warn", 140],
+        "code-complexity": ["warn", 15],
+        "function-max-lines": ["off", 1],
+        "comprehensive-interface": "warn"
+    }
+}

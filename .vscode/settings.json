@@ -1,0 +1,13 @@
+{
+    "npm.packageManager": "yarn",
+    "eslint.enable": true,
+    "editor.tabCompletion": "on",
+    "editor.inlineSuggest.enabled": true,
+    "editor.formatOnSave": true,
+    "editor.tabSize": 4,
+    "editor.codeActionsOnSave": ["source.fixAll.eslint"],
+    "prettier.configPath": ".prettierrc",
+    "[solidity]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    }
+}

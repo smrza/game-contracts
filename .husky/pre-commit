@@ -1,0 +1,21 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+# Get the current branch name
+branch=$(git symbolic-ref --short HEAD)
+
+# Define a regular expression to match the branch name pattern
+regex='^(feature|bugfix|hotfix|chore|deploy)\/[a-z0-9-]+$'
+
+# Ignore the check if the branch name is "main"
+if [ "$branch" != "main" ]; then
+    # Check if the branch name matches the pattern
+    if ! echo "$branch" | grep -Eq "^($regex)$"; then
+        echo "Invalid branch name. Branch names must start with feature/, bugfix/, hotfix/, chore/ or deploy/ and contain only lowercase letters, numbers and hyphens."
+    exit 1
+    fi
+fi
+
+npx lint-staged
+# yarn build-check
+# yarn lint:all
